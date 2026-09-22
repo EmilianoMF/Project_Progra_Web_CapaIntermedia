@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Login - Match.World</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="registro.css"> 
+</head>
+
+<body class="signup-body">
+
+<div class="signup-card">
+
+    <h2 class="mb-4 fw-bold text-white">Welcome Back</h2>
+
+    <form method="POST" action="login.php">
+
+        <!-- Email -->
+        <div class="mb-3">
+            <input type="email" 
+                   name="correo"
+                   class="form-control custom-input" 
+                   placeholder="Email">
+        </div>
+
+        <!-- Password -->
+        <div class="mb-4">
+            <input type="password" 
+                   name="contrasena"
+                   class="form-control custom-input"
+                   placeholder="Password">
+        </div>
+
+        <!-- Botón Login -->
+        <button type="submit" class="btn btn-dark w-100 signup-btn">
+            LOG IN
+        </button>
+
+        <div class="divider my-4">
+            <span>or</span>
+        </div>
+
+        <!-- Botón Facebook -->
+        <button type="button" class="btn facebook-btn w-100">
+            <i class="bi bi-facebook me-2"></i>
+            Log in with Facebook
+        </button>
+
+    </form>
+
+    <p class="mt-4 small text-white text-center">
+        Don’t have an account?
+        <a href="registro.html" class="login-link">Sign Up</a>
+    </p>
+
+</div>
+
+<script src="login.js"></script>
+</body>
+</html>

@@ -1,0 +1,170 @@
+/* ===========================
+   BODY / FONDO
+=========================== */
+
+.signup-body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: 'Inter', sans-serif;
+
+    background-image: url('https://img.freepik.com/premium-vector/gradient-colorful-gradient-background_1065176-2537.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+}
+
+/* ===========================
+   WRAPPER
+=========================== */
+
+.signup-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ===========================
+   CARD
+=========================== */
+
+.signup-card {
+    background: transparent;
+    padding: 55px;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 420px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.signup-card h2 {
+    color: #ffffff;
+    font-size: 30px;
+}
+
+/* ===========================
+   INPUTS
+=========================== */
+
+input.custom-input,
+select.custom-input {
+    background: transparent !important;
+    border: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.6);
+    border-radius: 0;
+    color: white !important;
+    padding: 10px 0;
+    box-shadow: none !important;
+}
+
+input.custom-input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+input.custom-input:focus,
+select.custom-input:focus {
+    background: transparent !important;
+    border-bottom: 2px solid white;
+    box-shadow: none !important;
+    color: white !important;
+    outline: none;
+}
+
+/* Input de fecha — ícono calendario blanco */
+input[type="date"].custom-input::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+/* Select — opciones desplegadas */
+select.custom-input option {
+    background: #1e293b;
+    color: white;
+}
+
+/* ===========================
+   BOTÓN SIGN UP
+=========================== */
+
+.signup-btn {
+    padding: 12px;
+    border-radius: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/* ===========================
+   DIVIDER
+=========================== */
+
+.divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.divider::before,
+.divider::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: #ddd;
+}
+
+.divider span {
+    padding: 0 10px;
+    font-size: 14px;
+    color: #777;
+}
+
+/* ===========================
+   LINK LOGIN
+=========================== */
+
+.login-link {
+    font-weight: 600;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.login-link:hover {
+    text-decoration: underline;
+}
+
+/* ===========================
+   FOTO DE PERFIL
+=========================== */
+
+.custom-file-upload {
+    display: inline-block;
+    padding: 12px 25px;
+    border: 2px solid white;
+    border-radius: 30px;
+    cursor: pointer;
+    color: white;
+    transition: 0.3s ease;
+    font-weight: 500;
+}
+
+.custom-file-upload:hover {
+    background: white;
+    color: black;
+}
+
+.photo-floating {
+    position: absolute;
+    top: 65px;
+    right: -200px;
+}
+
+#preview {
+    border-radius: 50%;
+    border: 2px solid #fff;
+}

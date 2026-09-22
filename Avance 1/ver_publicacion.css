@@ -1,0 +1,85 @@
+/* =========================================
+   ESTILOS PARA VER PUBLICACIÓN INDIVIDUAL
+========================================= */
+
+body { 
+    background: #0f172a; 
+    color: white; 
+    font-family: 'Inter', sans-serif; 
+}
+
+.post-container { 
+    max-width: 800px; 
+    margin: 80px auto 40px auto; 
+    background: #1e293b; 
+    border-radius: 15px; 
+    overflow: hidden; 
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5); 
+}
+
+.post-header { 
+    padding: 20px; 
+    border-bottom: 1px solid rgba(255,255,255,0.1); 
+}
+
+.media-container { 
+    background: #000; 
+    text-align: center; 
+}
+
+.media-item { 
+    max-width: 100%; 
+    max-height: 600px; 
+    object-fit: contain; 
+    display: block; 
+    margin: 0 auto; 
+}
+
+.media-item-video { 
+    width: 100%; 
+    max-height: 600px; 
+}
+
+.post-body { 
+    padding: 20px; 
+}
+
+.stats-bar { 
+    display: flex; 
+    gap: 20px; 
+    padding: 15px 20px; 
+    border-top: 1px solid rgba(255,255,255,0.1); 
+    border-bottom: 1px solid rgba(255,255,255,0.1); 
+}
+
+.comments-section { 
+    padding: 20px; 
+    background: rgba(0,0,0,0.2); 
+}
+
+.comment-box { 
+    background: rgba(255,255,255,0.05); 
+    padding: 15px; 
+    border-radius: 10px; 
+    margin-bottom: 10px; 
+}
+
+.btn-like { 
+    background: none; 
+    border: none; 
+    color: white; 
+    display: flex; 
+    align-items: center; 
+    gap: 8px; 
+    font-size: 16px; 
+    padding: 0; 
+    transition: 0.2s ease;
+}
+
+.btn-like.liked i { 
+    color: #e11d48; 
+}
+
+.btn-like:hover { 
+    color: #e11d48; 
+}

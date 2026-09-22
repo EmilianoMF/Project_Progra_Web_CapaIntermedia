@@ -1,0 +1,447 @@
+/* ===========================
+   NAVBAR
+=========================== */
+
+.navbar-custom {
+    padding: 15px 40px;
+}
+
+.navbar-nav .nav-item {
+    margin: 0 15px;
+}
+
+.navbar-nav .nav-link {
+    font-weight: 650;
+    letter-spacing: 1px;
+    color: rgb(0, 0, 0) !important;
+    transition: 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #dcdcdc !important;
+}
+
+/* ===========================
+   SEARCH & FORM
+=========================== */
+
+.search-input {
+    border-radius: 50px;
+    padding-left: 15px;
+}
+
+.btn-search {
+    border-radius: 50px;
+    padding: 6px 20px;
+}
+
+.form-select {
+    border-radius: 30px;
+    padding: 10px 15px;
+}
+
+/* ===========================
+   OFFCANVAS / FILTROS
+=========================== */
+
+.offcanvas-backdrop.show {
+    backdrop-filter: blur(6px);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.offcanvas {
+    width: 280px;
+}
+
+.offcanvas-body a {
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.offcanvas-body a:hover {
+    color: #ffc107;
+}
+
+/* ===========================
+   HERO / CAROUSEL
+=========================== */
+
+.hero {
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    padding-top: 120px;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero .container-fluid {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-text h1 {
+    font-size: 70px;
+    font-weight: 800;
+}
+
+.hero-text p {
+    font-size: 18px;
+    max-width: 500px;
+}
+
+.btn-primary {
+    background-color: #2563eb;
+    border: none;
+    font-weight: 600;
+    padding: 10px 25px;
+}
+
+.custom-card {
+    width: 250px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.custom-card img {
+    height: 350px;
+    object-fit: cover;
+}
+
+.carousel {
+    width: 270px;
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+.footer {
+    background: transparent;
+    color: white;
+    font-size: 14px;
+}
+
+.footer p {
+    opacity: 0.8;
+    color: black;
+}
+
+/* ===========================
+   BODY / GLOBAL
+=========================== */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(
+        135deg,
+        #0f172a,
+        #1e293b,
+        #111827
+    );
+    font-family: 'Inter', sans-serif;
+}
+
+/* ===========================
+   MUNDIALES — SECCIÓN
+=========================== */
+
+.mundiales-section {
+    padding: 80px 40px;
+}
+
+.section-header {
+    margin-bottom: 50px;
+}
+
+.section-header h2 {
+    font-size: 45px;
+    font-weight: 800;
+    color: white;
+}
+
+.section-header p {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 18px;
+}
+
+/* ===========================
+   MUNDIALES — ROW
+=========================== */
+
+.row.g-4 > div {
+    display: flex;
+    align-items: stretch;
+}
+
+/* ===========================
+   MUNDIALES — CARD
+=========================== */
+
+.mundial-card {
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 25px;
+    padding: 35px;
+    transition: 0.3s ease;
+    color: white;
+    width: 100%;
+    min-height: 580px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
+}
+
+.mundial-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+}
+
+/* ===========================
+   MUNDIALES — BANNER
+=========================== */
+
+.mundial-banner {
+    width: calc(100% + 70px);
+    margin: -35px -35px 20px -35px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 25px 25px 0 0;
+    flex-shrink: 0;
+}
+
+.mundial-banner-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* ===========================
+   MUNDIALES — TEXTOS
+=========================== */
+
+.mundial-title {
+    font-size: 28px;
+    font-weight: 800;
+    margin-bottom: 10px;
+    min-height: 80px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+}
+
+.mundial-country {
+    font-size: 17px;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 5px;
+    min-height: 28px;
+}
+
+.mundial-year {
+    font-weight: 700;
+    color: #ffd369;
+    margin-bottom: 15px;
+}
+
+.mundial-resena {
+    color: rgba(255, 255, 255, 0.75);
+    flex-grow: 1;
+    min-height: 100px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    line-clamp: 4;
+}
+
+/* ===========================
+   MUNDIALES — BOTÓN
+=========================== */
+
+.mundial-btn {
+    margin-top: auto;
+    border-radius: 30px;
+    padding: 10px 25px;
+    font-weight: 700;
+    width: 100%;
+}
+
+/* ===========================
+   HERO DINÁMICO
+=========================== */
+
+.hero {
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+    padding-top: 0;
+}
+
+/* Fondo dinámico */
+.hero-bg {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: opacity 0.4s ease, background-image 0.4s ease;
+    z-index: 0;
+}
+
+/* Overlay oscuro con difuminado abajo */
+.hero-bg-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to bottom,
+        rgba(15, 23, 42, 0.35) 0%,
+        rgba(15, 23, 42, 0.6)  60%,
+        rgba(15, 23, 42, 0.95) 100%
+    );
+    z-index: 1;
+}
+
+.hero-inner {
+    position: relative;
+    z-index: 2;
+}
+
+/* Texto del hero */
+.hero-text-col {
+    padding-left: 40px;
+}
+
+.hero-anio {
+    font-size: 13px;
+    font-weight: 700;
+    color: #ffd369;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    transition: opacity 0.3s ease;
+}
+
+.hero-titulo {
+    font-size: 62px;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 12px;
+    transition: opacity 0.3s ease;
+}
+
+.hero-sede {
+    font-size: 18px;
+    opacity: 0.7;
+    margin-bottom: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* Tarjeta del carousel */
+.hero-card-wrap {
+    width: 300px;
+    padding-right: 40px;
+}
+
+.custom-card {
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+    border: none;
+}
+
+.custom-card .card-img-top {
+    height: 400px;
+    object-fit: cover;
+    display: block;
+    width: 100%;
+}
+
+/* Texto sobre la tarjeta */
+.card-overlay-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px 15px 15px;
+    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+    color: white;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+/* Flechas del carousel */
+.hero-card-wrap .carousel-control-prev,
+.hero-card-wrap .carousel-control-next {
+    width: 40px;
+    height: 40px;
+    background: rgba(255,255,255,0.2);
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+@media (max-width: 768px) {
+    .hero-titulo { font-size: 38px; }
+    .hero-text-col { padding-left: 20px; padding-bottom: 30px; }
+    .hero-card-wrap { width: 100%; padding: 0 20px; }
+    .custom-card .card-img-top { height: 280px; }
+}
+
+
+/* ===========================
+   FAB PUBLICAR
+=========================== */
+
+.fab-publicar {
+    position: fixed;
+    bottom: 35px;
+    right: 35px;
+    width: 55px;
+    height: 55px;
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.3);
+    border-radius: 16px;
+    transform: rotate(-45deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: 0.3s ease;
+    z-index: 999;
+}
+
+.fab-publicar span {
+    color: white;
+    font-size: 28px;
+    font-weight: 300;
+    transform: rotate(45deg);
+    line-height: 1;
+    margin-top: -2px;
+}
+
+.fab-publicar:hover {
+    background: rgba(255,255,255,0.25);
+    border-color: rgba(255,255,255,0.6);
+    transform: rotate(-45deg) scale(1.1);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}

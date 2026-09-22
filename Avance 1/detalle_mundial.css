@@ -1,0 +1,345 @@
+/* ===========================
+   BODY / GLOBAL
+=========================== */
+
+html { scroll-behavior: smooth; }
+
+body {
+    background: linear-gradient(135deg, #0f172a, #1e293b, #111827);
+    font-family: 'Inter', sans-serif;
+    min-height: 100vh;
+    color: white;
+}
+
+/* ===========================
+   NAVBAR
+=========================== */
+
+.navbar-custom {
+    padding: 15px 40px;
+    background: rgba(15, 23, 42, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.navbar-nav .nav-item { margin: 0 10px; }
+
+.navbar-nav .nav-link {
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: white !important;
+    transition: 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover { color: #ffd369 !important; }
+
+/* ===========================
+   HERO DEL MUNDIAL
+=========================== */
+
+.mundial-hero {
+    position: relative;
+    min-height: 520px;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 60px;
+    padding-top: 100px;
+}
+
+.hero-bg {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to bottom,
+        rgba(15,23,42,0.4) 0%,
+        rgba(15,23,42,0.85) 100%
+    );
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: flex-end;
+    gap: 40px;
+}
+
+/* LOGO */
+.mundial-logo-wrap {
+    width: 130px;
+    height: 130px;
+    border-radius: 20px;
+    overflow: hidden;
+    background: white;
+    flex-shrink: 0;
+    border: 3px solid rgba(255,255,255,0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mundial-logo-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 10px;
+}
+
+/* TEXTO */
+.mundial-anio {
+    font-size: 13px;
+    font-weight: 700;
+    color: #ffd369;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.mundial-nombre {
+    font-size: 42px;
+    font-weight: 800;
+    margin: 6px 0;
+    line-height: 1.1;
+}
+
+.mundial-sede {
+    font-size: 16px;
+    opacity: 0.7;
+    margin-bottom: 12px;
+}
+
+.mundial-resena {
+    font-size: 15px;
+    opacity: 0.75;
+    max-width: 600px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* ===========================
+   SECCIÓN PUBLICACIONES
+=========================== */
+
+.pubs-container {
+    padding-top: 60px;
+    padding-bottom: 80px;
+}
+
+.pubs-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 35px;
+}
+
+.pubs-header h2 {
+    font-size: 30px;
+    font-weight: 800;
+    margin: 0;
+}
+
+.pubs-count {
+    font-size: 14px;
+    opacity: 0.5;
+}
+
+/* SIN PUBLICACIONES */
+.sin-publicaciones {
+    text-align: center;
+    padding: 80px 20px;
+    opacity: 0.5;
+}
+
+.sin-publicaciones i {
+    font-size: 56px;
+    display: block;
+    margin-bottom: 16px;
+}
+
+/* ===========================
+   CARD PUBLICACIÓN
+=========================== */
+
+.pub-card {
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 20px;
+    overflow: hidden;
+    transition: 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.pub-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+}
+
+/* MEDIA */
+.pub-media {
+    position: relative;
+    height: 220px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.pub-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.pub-multi {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(0,0,0,0.6);
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 3px 10px;
+    border-radius: 20px;
+}
+
+/* BODY */
+.pub-body {
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.pub-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    margin-bottom: 12px;
+}
+
+.tag-categoria,
+.tag-seleccion {
+    font-size: 11px;
+    font-weight: 600;
+    padding: 3px 10px;
+    border-radius: 20px;
+}
+
+.tag-categoria {
+    background: rgba(99,179,237,0.15);
+    color: #90cdf4;
+    border: 1px solid rgba(99,179,237,0.3);
+}
+
+.tag-seleccion {
+    background: rgba(154,230,180,0.15);
+    color: #9ae6b4;
+    border: 1px solid rgba(154,230,180,0.3);
+}
+
+.pub-desc {
+    font-size: 14px;
+    opacity: 0.8;
+    flex-grow: 1;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+    margin-bottom: 15px;
+}
+
+.pub-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    opacity: 0.5;
+    border-top: 1px solid rgba(255,255,255,0.08);
+    padding-top: 12px;
+}
+
+/* ===========================
+   FAB PUBLICAR
+=========================== */
+
+.fab-publicar {
+    position: fixed;
+    bottom: 35px;
+    right: 35px;
+    width: 55px;
+    height: 55px;
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.3);
+    border-radius: 16px;
+    transform: rotate(-45deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: 0.3s ease;
+    z-index: 999;
+}
+
+.fab-publicar span {
+    color: white;
+    font-size: 28px;
+    font-weight: 300;
+    transform: rotate(45deg);
+    line-height: 1;
+    margin-top: -2px;
+}
+
+.fab-publicar:hover {
+    background: rgba(255,255,255,0.25);
+    border-color: rgba(255,255,255,0.6);
+    transform: rotate(-45deg) scale(1.1);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+.footer {
+    background: transparent;
+    font-size: 14px;
+}
+
+.footer p {
+    opacity: 0.4;
+    color: white;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media (max-width: 768px) {
+    .hero-content {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .mundial-nombre { font-size: 30px; }
+
+    .pubs-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+}

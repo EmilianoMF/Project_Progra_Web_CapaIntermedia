@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Sign Up - Match.World</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="registro.css">
+</head>
+
+<body class="signup-body">
+
+    <div class="signup-wrapper">
+        <div class="signup-card">
+            <h2 class="mb-4 fw-bold">Create Account</h2>
+
+            <form id="signupForm" enctype="multipart/form-data" method="POST" action="registro.php">
+                <!-- Nombre completo -->
+                <div class="mb-3">
+                    <input type="text" name="nombre" class="form-control custom-input" placeholder="Full Name" required>
+                </div>
+
+                <!-- Fecha de nacimiento -->
+                <div class="mb-3">
+                    <input type="date" name="fecha" class="form-control custom-input" placeholder="Date of Birth" required>
+                </div>
+
+                <!-- Género -->
+                <div class="mb-3">
+                    <select id="gender" name="gender" class="form-control custom-input" required>
+                        <option value="" selected disabled>Gender</option>
+                        <option>Male</option>
+                        <option>Female</option>
+                        <option>Otro</option>
+                    </select>
+                </div>
+
+                <!-- Campo extra para género personalizado -->
+                <div class="mb-3" id="other-gender-field" style="display:none;">
+                    <input type="text" name="genero_personalizado" class="form-control custom-input" placeholder="Specify your gender">
+                </div>
+
+                <!-- País de nacimiento -->
+                <div class="mb-3">
+                    <input type="text" name="pais" class="form-control custom-input" placeholder="Country of Birth" required>
+                </div>
+
+                <!-- Nacionalidad -->
+                <div class="mb-3">
+                    <input type="text" name="nacionalidad" class="form-control custom-input" placeholder="Nationality" required>
+                </div>
+
+                <!-- Correo -->
+                <div class="mb-3">
+                    <input type="email" name="correo" id="correo" class="form-control custom-input" placeholder="Email" required>
+                    <span id="correo-error" class="text-danger small"></span>
+                </div>
+
+
+                <!-- Contraseña -->
+                <div class="mb-4">
+                    <input type="password" name="contrasena" id="password" class="form-control custom-input" placeholder="Password" required>
+                </div>
+                
+
+                <!-- FOTO -->
+                <div class="photo-floating">
+                    <label for="photo-upload" class="custom-file-upload">
+                        <i class="bi bi-cloud-upload"></i> Upload Photo
+                    </label>
+
+                    <input type="file"
+                        name="foto"
+                        id="photo-upload"
+                        accept="image/*"
+                        required
+                        hidden>
+
+                    <img id="preview"
+                        class="rounded-circle mt-3"
+                        style="width:120px;height:120px;object-fit:cover;display:none;">
+                </div>
+
+
+                <!-- Botón -->
+                <button type="submit" class="btn btn-dark w-100 signup-btn">SIGN UP</button>
+            </form>
+
+
+            <p class="mt-4 small text-muted">
+                Already have an account? <a href="login.html" class="login-link">Log in</a>
+            </p>
+        </div>
+
+
+    </div>
+
+
+<script src="registro.js"></script>
+</body>
+</html>

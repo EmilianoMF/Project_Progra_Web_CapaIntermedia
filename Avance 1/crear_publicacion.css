@@ -1,0 +1,295 @@
+/* ===========================
+   NAVBAR
+=========================== */
+
+.navbar-custom {
+    padding: 15px 40px;
+    background: rgba(15, 23, 42, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.navbar-nav .nav-item {
+    margin: 0 10px;
+}
+
+.navbar-nav .nav-link {
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: white !important;
+    transition: 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active-link {
+    color: #ffd369 !important;
+}
+
+/* ===========================
+   BODY / GLOBAL
+=========================== */
+
+html { scroll-behavior: smooth; }
+
+body {
+    background: linear-gradient(135deg, #0f172a, #1e293b, #111827);
+    font-family: 'Inter', sans-serif;
+    min-height: 100vh;
+}
+
+/* ===========================
+   CONTENEDOR PRINCIPAL
+=========================== */
+
+.pub-container {
+    padding-top: 120px;
+    padding-bottom: 60px;
+    max-width: 750px;
+}
+
+/* ===========================
+   HEADER
+=========================== */
+
+.pub-header {
+    margin-bottom: 40px;
+}
+
+.pub-header h1 {
+    font-size: 38px;
+    font-weight: 800;
+    color: white;
+}
+
+.pub-header p {
+    color: rgba(255,255,255,0.6);
+    font-size: 16px;
+}
+
+/* ===========================
+   CARD FORMULARIO
+=========================== */
+
+.pub-card {
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 25px;
+    padding: 40px;
+}
+
+/* ===========================
+   LABELS E INPUTS
+=========================== */
+
+.form-label {
+    color: white;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.optional {
+    color: rgba(255,255,255,0.45);
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.custom-input,
+.custom-select {
+    background: rgba(255,255,255,0.08) !important;
+    border: 1px solid rgba(255,255,255,0.2) !important;
+    border-radius: 12px !important;
+    color: white !important;
+    padding: 12px 16px !important;
+    transition: 0.3s ease;
+}
+
+.custom-input::placeholder {
+    color: rgba(255,255,255,0.35);
+}
+
+.custom-input:focus,
+.custom-select:focus {
+    background: rgba(255,255,255,0.12) !important;
+    border-color: rgba(255,255,255,0.4) !important;
+    box-shadow: 0 0 0 3px rgba(255,211,105,0.15) !important;
+    outline: none;
+    color: white !important;
+}
+
+.custom-select option {
+    background: #1e293b;
+    color: white;
+}
+
+.textarea-custom {
+    resize: vertical;
+    min-height: 110px;
+}
+
+/* ===========================
+   ZONA DE CARGA
+=========================== */
+
+.upload-area {
+    border: 2px dashed rgba(255,255,255,0.25);
+    border-radius: 16px;
+    padding: 40px 20px;
+    text-align: center;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.upload-area:hover,
+.upload-area.dragover {
+    border-color: #ffd369;
+    background: rgba(255,211,105,0.05);
+}
+
+.upload-icon {
+    font-size: 48px;
+    color: rgba(255,255,255,0.4);
+    display: block;
+    margin-bottom: 12px;
+}
+
+.upload-text {
+    color: rgba(255,255,255,0.6);
+    margin-bottom: 12px;
+}
+
+.upload-btn {
+    border-radius: 30px;
+    padding: 8px 24px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.upload-hint {
+    color: rgba(255,255,255,0.35);
+    font-size: 13px;
+    margin-top: 12px;
+    margin-bottom: 0;
+}
+
+/* ===========================
+   PREVIEW DE ARCHIVOS
+=========================== */
+
+.preview-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.preview-item {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 2px solid rgba(255,255,255,0.15);
+}
+
+.preview-item img,
+.preview-item video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.preview-item .preview-tipo {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    background: rgba(0,0,0,0.6);
+    color: white;
+    font-size: 11px;
+    padding: 2px 7px;
+    border-radius: 20px;
+}
+
+.preview-item .preview-remove {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: rgba(220,38,38,0.85);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    font-size: 12px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ===========================
+   BOTÓN ENVIAR
+=========================== */
+
+.pub-btn {
+    width: 100%;
+    border-radius: 30px;
+    padding: 13px;
+    font-weight: 700;
+    font-size: 16px;
+    margin-top: 10px;
+    transition: 0.3s ease;
+}
+
+.pub-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+/* ===========================
+   NOTA INFERIOR
+=========================== */
+
+.pub-nota {
+    color: rgba(255,255,255,0.4);
+    font-size: 13px;
+    text-align: center;
+}
+
+/* ===========================
+   ALERTAS
+=========================== */
+
+.alert-custom {
+    border-radius: 14px;
+    padding: 16px 20px;
+    margin-bottom: 24px;
+    font-weight: 600;
+}
+
+.alert-success-custom {
+    background: rgba(34,197,94,0.15);
+    border: 1px solid rgba(34,197,94,0.3);
+    color: #86efac;
+}
+
+.alert-error-custom {
+    background: rgba(220,38,38,0.15);
+    border: 1px solid rgba(220,38,38,0.3);
+    color: #fca5a5;
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+.footer {
+    background: transparent;
+    font-size: 14px;
+}
+
+.footer p {
+    opacity: 0.5;
+    color: white;
+}

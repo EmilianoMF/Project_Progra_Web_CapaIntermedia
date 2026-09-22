@@ -1,0 +1,226 @@
+/* ===== GENERAL ===== */
+
+body{
+    font-family: 'Inter', sans-serif;
+
+    background:
+    linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
+    url('https://img.freepik.com/premium-vector/gradient-colorful-gradient-background_1065176-2537.jpg');
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    color: white;
+    min-height: 100vh;
+}
+
+/* ===== NAVBAR ===== */
+
+.navbar-custom{
+    padding: 15px 40px;
+
+    background: rgba(255,255,255,0.15) !important;
+
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.navbar-nav .nav-item{
+    margin: 0 15px;
+}
+
+.navbar-nav .nav-link{
+    font-weight: 650;
+    letter-spacing: 1px;
+
+    color: white !important;
+
+    transition: 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover{
+    color: #dcdcdc !important;
+}
+
+/* ===== PERFIL ===== */
+
+.profile-container{
+    margin-top: 140px;
+    padding: 40px;
+}
+
+/* Card principal */
+
+.profile-card{
+    background: rgba(255,255,255,0.12);
+
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+
+    border: 1px solid rgba(255,255,255,0.15);
+
+    border-radius: 28px;
+
+    padding: 40px;
+
+    box-shadow: 0 20px 50px rgba(0,0,0,0.35);
+}
+
+/* Foto */
+
+.profile-photo{
+    width: 180px;
+    height: 180px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+
+    border: 4px solid rgba(255,255,255,0.8);
+
+    box-shadow: 0 10px 25px rgba(0,0,0,.35);
+}
+
+/* Información */
+
+.profile-name{
+    font-size: 45px;
+    font-weight: 800;
+}
+
+.profile-info{
+    margin-top: 15px;
+}
+
+.profile-info p{
+    margin-bottom: 10px;
+    font-size: 17px;
+    opacity: .9;
+}
+
+.profile-info i{
+    margin-right: 10px;
+}
+
+/* ===== BOTONES ===== */
+
+.profile-actions{
+    margin-top: 45px;
+}
+
+.action-card{
+    background: rgba(255,255,255,0.12);
+
+    border: 1px solid rgba(255,255,255,0.15);
+
+    border-radius: 22px;
+
+    padding: 35px 25px;
+
+    text-align: center;
+
+    transition: 0.3s ease;
+
+    cursor: pointer;
+
+    height: 100%;
+}
+
+.action-card:hover{
+    transform: translateY(-8px);
+
+    background: rgba(255,255,255,0.18);
+}
+
+.action-card i{
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.action-card h4{
+    font-weight: 700;
+}
+
+.action-card p{
+    opacity: .85;
+    font-size: 15px;
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media(max-width:768px){
+
+    .profile-card{
+        text-align: center;
+    }
+
+    .profile-name{
+        margin-top: 25px;
+        font-size: 35px;
+    }
+
+}
+
+/* ===== ESTILOS PARA LAS CAJAS DE ESTADÍSTICAS ===== */
+
+.stat-box {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 25px 20px;
+    text-align: center;
+    transition: 0.3s ease;
+    height: 100%;
+}
+
+.stat-box:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.stat-box i {
+    font-size: 40px;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+.stat-box h5 {
+    font-size: 15px;
+    font-weight: 600;
+    opacity: 0.8;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.stat-box h2 {
+    font-size: 38px;
+    font-weight: 800;
+    margin: 0;
+    color: white;
+}
+
+/* Estilo para la tabla de publicaciones */
+.table-dark {
+    background: transparent !important;
+}
+
+.table-dark tbody tr {
+    background: rgba(255, 255, 255, 0.05);
+    transition: 0.3s;
+}
+
+.table-dark tbody tr:hover {
+    background: rgba(255, 255, 255, 0.15) !important;
+}
+
+.table-dark th {
+    background: rgba(255, 255, 255, 0.1) !important;
+    border-color: rgba(255, 255, 255, 0.1);
+}

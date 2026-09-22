@@ -1,0 +1,463 @@
+/* =========================
+FUENTE
+========================= */
+
+body {
+
+    margin: 0;
+    min-height: 100vh;
+
+    font-family: 'Inter', sans-serif;
+
+    background-image:
+    linear-gradient(
+        rgba(0,0,0,0.6),
+        rgba(0,0,0,0.7)
+    ),
+
+    url('https://wallpaperaccess.com/full/5672323.jpg');
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    color: white;
+}
+
+/* =========================
+NAVBAR
+========================= */
+
+.navbar-custom {
+
+    padding: 18px 40px;
+
+    background: rgba(255,255,255,0.1);
+
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    border-bottom:
+    1px solid rgba(255,255,255,0.2);
+}
+
+.nav-link {
+
+    color: white !important;
+
+    font-weight: 600;
+    letter-spacing: 1px;
+
+    margin: 0 15px;
+
+    transition: 0.3s ease;
+}
+
+.nav-link:hover {
+
+    color: #dcdcdc !important;
+}
+
+.active-link {
+
+    color: #ffffff !important;
+
+    border-bottom:
+    2px solid white;
+}
+
+/* =========================
+CONTENIDO
+========================= */
+
+.admin-container {
+
+    padding-top: 140px;
+    padding-bottom: 60px;
+}
+
+/* =========================
+HEADER
+========================= */
+
+.admin-header {
+
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.admin-header h1 {
+
+    font-size: 55px;
+    font-weight: 800;
+}
+
+.admin-header p {
+
+    opacity: 0.8;
+    font-size: 18px;
+}
+
+/* =========================
+CARD
+========================= */
+
+.admin-card {
+
+    background: rgba(255,255,255,0.08);
+
+    backdrop-filter: blur(14px);
+
+    border:
+    1px solid rgba(255,255,255,0.1);
+
+    border-radius: 25px;
+
+    padding: 40px;
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,0.3);
+}
+
+/* =========================
+TÍTULOS
+========================= */
+
+.section-title {
+
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+/* =========================
+INPUTS
+========================= */
+
+.custom-input {
+
+    background: transparent !important;
+
+    border: none;
+
+    border-bottom:
+    2px solid rgba(255,255,255,0.4);
+
+    border-radius: 0;
+
+    color: white !important;
+
+    padding: 12px 0;
+}
+
+.custom-input:focus {
+
+    box-shadow: none;
+
+    border-bottom:
+    2px solid white;
+}
+
+.custom-input::placeholder {
+
+    color: rgba(255,255,255,0.7);
+}
+
+/* TEXTAREA */
+
+.textarea-custom {
+
+    resize: none;
+}
+
+/* =========================
+BOTÓN
+========================= */
+
+.admin-btn {
+
+    border-radius: 40px;
+
+    padding: 12px 35px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    transition: 0.3s ease;
+}
+
+.admin-btn:hover {
+
+    transform: translateY(-2px);
+}
+
+/* =========================
+PUBLICACIONES
+========================= */
+
+.pending-post {
+
+    display: flex;
+    align-items: flex-start;  
+    gap: 20px;              
+    background: rgba(255,255,255,0.06);
+    border-radius: 20px;
+    padding: 25px;
+    margin-bottom: 20px;
+}
+
+.pending-post h5 {
+
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+
+.pending-post p {
+
+    margin: 0;
+    opacity: 0.7;
+}
+
+.buttons-post {
+
+    display: flex;
+    gap: 10px;
+}
+
+/* =========================
+RESPONSIVE
+========================= */
+
+@media(max-width:768px){
+
+    .pending-post {
+
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .admin-header h1 {
+
+        font-size: 40px;
+    }
+}
+
+/* SELECT PAÍSES */
+select.custom-input {
+
+    background: rgba(255,255,255,0.12) !important;
+
+    border: 1px solid rgba(255,255,255,0.2);
+
+    color: white !important;
+
+    border-radius: 18px;
+
+    padding: 14px 18px;
+
+    backdrop-filter: blur(10px);
+
+    -webkit-backdrop-filter: blur(10px);
+
+    font-weight: 500;
+
+}
+
+/* TEXTO OPTIONS */
+select.custom-input option {
+
+    background: #1f2937;
+
+    color: white;
+
+}
+
+select.custom-input:invalid {
+
+    color: rgba(255,255,255,0.7);
+
+}
+
+/* =========================
+BADGE PENDIENTES
+========================= */
+
+.badge-pendientes {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #ef4444;
+    color: white;
+    font-size: 13px;
+    font-weight: 700;
+    border-radius: 50%;
+    width: 26px;
+    height: 26px;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+/* =========================
+SIN PENDIENTES
+========================= */
+
+.no-pendientes {
+    text-align: center;
+    padding: 40px 0;
+    opacity: 0.5;
+}
+
+.no-pendientes i {
+    font-size: 48px;
+    display: block;
+    margin-bottom: 12px;
+}
+
+/* =========================
+MINIATURA
+========================= */
+
+.pending-thumb {
+    width: 90px;
+    height: 90px;
+    border-radius: 12px;
+    overflow: hidden;
+    flex-shrink: 0;
+    background: rgba(255,255,255,0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pending-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.thumb-video,
+.thumb-sin-archivo {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    opacity: 0.5;
+}
+
+/* =========================
+INFO PUBLICACIÓN
+========================= */
+
+.pending-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.pending-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+.meta-mundial,
+.meta-categoria,
+.meta-seleccion {
+    font-size: 12px;
+    font-weight: 600;
+    padding: 3px 10px;
+    border-radius: 20px;
+}
+
+.meta-mundial {
+    background: rgba(255, 211, 105, 0.15);
+    color: #ffd369;
+    border: 1px solid rgba(255,211,105,0.3);
+}
+
+.meta-categoria {
+    background: rgba(99, 179, 237, 0.15);
+    color: #90cdf4;
+    border: 1px solid rgba(99,179,237,0.3);
+}
+
+.meta-seleccion {
+    background: rgba(154, 230, 180, 0.15);
+    color: #9ae6b4;
+    border: 1px solid rgba(154,230,180,0.3);
+}
+
+.pending-desc {
+    font-size: 14px;
+    opacity: 0.85;
+    margin-bottom: 12px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.pending-footer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    font-size: 12px;
+    opacity: 0.55;
+}
+
+/* =========================
+BOTONES PENDIENTES
+========================= */
+
+.buttons-post {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+.buttons-post form {
+    margin: 0;
+}
+
+.buttons-post .btn {
+    width: 120px;
+    font-weight: 600;
+}
+
+/* =========================
+ALERTAS
+========================= */
+
+.alert-custom {
+    border-radius: 14px;
+    padding: 16px 20px;
+    font-weight: 600;
+}
+
+.alert-success-custom {
+    background: rgba(34,197,94,0.15);
+    border: 1px solid rgba(34,197,94,0.3);
+    color: #86efac;
+}
+
+.alert-error-custom {
+    background: rgba(220,38,38,0.15);
+    border: 1px solid rgba(220,38,38,0.3);
+    color: #fca5a5;
+}
+
+/* RESPONSIVE BOTONES */
+@media(max-width: 768px) {
+    .buttons-post {
+        flex-direction: row;
+        width: 100%;
+    }
+    .buttons-post .btn {
+        flex: 1;
+    }
+}
